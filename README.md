@@ -29,11 +29,17 @@ Ps: I want to remember, also because I have an agricultural background, that eac
 ## 2 - Mobile and wireless communications systems - Greenhouse Control System
 
 ### Materials:
-* Esp8266 based microcontroller with Wi-fi and Bluetooth
+* Esp8266/32 based microchip with Wi-fi and Bluetooth
 * Dht11 humidity and temperature module
 * Photoresistor module
 * Soil moisture module
 
 ### Description:
 That's a more indoor version of the previous one, in fact we use a dth11 (smaller temperature range) and we use the esp8266 Wi-fi/Bluetooth to access data!
-Commands are directly programmed into the Telegram bot we use here and every data request is in real time!
+The idea for this is a home based monitor for plants.
+The environment is controlled by an esp8266 based microchip, we read (and not keep record) data of:
+* Temperature
+* Humidity
+* Light
+* Soil humidity
+Commands are directly programmed into the Telegram bot and every data request is in real time!
