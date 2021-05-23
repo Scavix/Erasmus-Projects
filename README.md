@@ -24,7 +24,7 @@ The environment is controlled by an arduino based microcontroller, we keep track
 * Soil humidity
 We have an in-loco lcd terminal and in case of cardinal temperatures "jump" or favorable conditions for the development of phytopathogenic diseases we send an sms to the farmer.
 
-Ps: I want to remember, also because I have an agricultural background, that each plant has different cardinal temperatures/values, so choosing I suggest to choose the correct temperature for one or a specific kind of crops.
+Ps: I want to remember that each plant has different cardinal temperatures/values, so I suggest to choose the correct temperature for one or a specific kind of crops.
 
 ## 2 - Mobile and wireless communications systems - Greenhouse Control System
 
