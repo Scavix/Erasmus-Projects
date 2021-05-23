@@ -23,6 +23,7 @@ The environment is controlled by an arduino based microcontroller, we keep track
 * Light
 * Soil humidity
 We have an in-loco lcd terminal and in case of cardinal temperatures "jump" or favorable conditions for the development of phytopathogenic diseases we send an sms to the farmer.
+It is also possible to read data through a serial console in loco.
 
 Ps: I want to remember that each plant has different cardinal temperatures/values, so I suggest to choose the correct temperature for one or a specific kind of crops.
 
@@ -43,3 +44,4 @@ The environment is controlled by an esp8266 based microchip, we read (and not ke
 * Light
 * Soil humidity
 Commands are directly programmed into the Telegram bot and every data request is in real time!
+It is also possible to read data through a serial console in loco.
