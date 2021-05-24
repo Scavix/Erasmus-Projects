@@ -39,6 +39,8 @@ Ps: I want to remember that each plant has different cardinal temperatures/value
 * Soil moisture module
 * Telegram
 * Android Bluetooth device
+* Relay Module
+* Lights/pumps (everything that can be turned on/off)
 
 ### Description:
 That's a more indoor version of the previous one, in fact we use a dth11 (smaller temperature range) and we use the esp8266 Wi-fi/Bluetooth to access data!
@@ -50,5 +52,8 @@ The environment is controlled by an esp8266 based microchip, we read (and not ke
 * Light
 * Soil humidity
 
-Commands are directly programmed into the Telegram bot and every data request is in real time!
-It is also possible to read data through a serial console in loco.
+Every data request is in real time!
+Telegram Commands are directly written into the Telegram Bot!
+It is possible to connect through bluetooth to read the data!
+It is also possible to read data connecting pc through a serial console in-loco!
+It is possible to use telegram as a remote controller to turno off and on things!
