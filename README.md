@@ -43,6 +43,7 @@ Ps: I want to remember that each plant has different cardinal temperatures/value
 * Android Bluetooth device
 * Relay Module
 * Lights/pumps (everything that can be turned on/off)
+* Water level sensor
 
 ### Description:
 That's a more indoor version of the previous one, in fact we use a dth11 (smaller temperature range) and we use the esp8266 Wi-fi/Bluetooth to access data!
