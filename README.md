@@ -11,7 +11,7 @@
 * Screen OLED 128x64 I2C
 * Sd card module I2C
 * Sd card
-* Soil moisture module
+* Soil moisture module (Hygrometer)
 * Sim card expansion module SIM800L
 * Sim Card
 
@@ -25,8 +25,10 @@ The environment is controlled by an arduino based microcontroller, we keep track
 * Light
 * Soil humidity
 
-We have an in-loco Oled terminal and in case of cardinal temperatures "jump" or favorable conditions for the development of phytopathogenic diseases we send an sms to the farmer.
-It is also possible to read data through a serial console connecting the pc in loco.
+In case of detection of cardinal temperatures or favorable conditions for the development of phytopathogenic diseases, we send an sms to the farmer!
+It is possible to take the data from the sd card in order to do data analysis!
+It is possible to read data through a local Oled terminal in loco!
+It is possible to read data through a serial console connecting the pc in loco!
 
 Ps: I want to remember that each plant has different cardinal temperatures/values, so I suggest to choose the correct temperature for one or a specific kind of crops.
 
@@ -36,7 +38,7 @@ Ps: I want to remember that each plant has different cardinal temperatures/value
 * Esp32 based microchip with Wi-fi and Bluetooth
 * Dht11 humidity and temperature module
 * Photoresistor module
-* Soil moisture module
+* Soil moisture module (Hygrometer)
 * Telegram
 * Android Bluetooth device
 * Relay Module
@@ -45,7 +47,7 @@ Ps: I want to remember that each plant has different cardinal temperatures/value
 ### Description:
 That's a more indoor version of the previous one, in fact we use a dth11 (smaller temperature range) and we use the esp8266 Wi-fi/Bluetooth to access data!
 The idea for this is a home based monitor for plants.
-The environment is controlled by an esp8266 based microchip, we read (and not keep record) data of:
+The environment is controlled by an esp32 based microchip, we read (and not keep record) data of:
 
 * Temperature
 * Humidity
@@ -55,5 +57,5 @@ The environment is controlled by an esp8266 based microchip, we read (and not ke
 Every data request is in real time!
 Telegram Commands are directly written into the Telegram Bot!
 It is possible to connect through bluetooth to read the data!
-It is also possible to read data connecting pc through a serial console in-loco!
+It is possible to read data connecting pc through a serial console in-loco!
 It is possible to use telegram as a remote controller to turno off and on things!
