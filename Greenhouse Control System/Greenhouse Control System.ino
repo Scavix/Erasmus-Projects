@@ -75,7 +75,7 @@ void loop() {
   // if there is an incoming message...
   if (myBot.getNewMessage(msg)){
     // ...forward it to the sender
-    if(msg.text.equalsIgnoreCase("/DHT")){
+    if(msg.text.equalsIgnoreCase("/data")){
       myBot.sendMessage(msg.sender.id, toSend);
     }
     else{
