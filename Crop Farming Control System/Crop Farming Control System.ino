@@ -22,7 +22,7 @@ Adafruit_SSD1306 display(128, 64);  // Create display
 
 // initialing variable here improve dynamic memory management
 float h, t, m, l;
-int sentinel = 2;
+int sentinel = 2, condition = 0;
 String humidity, temperature, light, soilMoisture, toSave;
 
 void setup() {
@@ -107,12 +107,19 @@ void loop() {
     Serial.println("error");
 
   }
-
+  
+  if(t<15){
+    condition = 1;
+  }
+  else{
+    condition = 0;
+  }
+  
   // check for max sms and conditions
-  //if(condition&&(sentinel>0)){
-    //simSerial.print(""); //text content
-    //updateSerial();sentinel--;
-    //simSerial.write(26); // 26 = Ctrl + z in ASCII}
+  if(condition&&(sentinel>0)){
+    simSerial.print(""); //text content
+    updateSerial();sentinel--;
+    simSerial.write(26); // 26 = Ctrl + z in ASCII}
 
   display.clearDisplay();  // Clear the display so we can refresh
 
