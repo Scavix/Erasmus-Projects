@@ -1,10 +1,10 @@
 #include "DHT.h" // DTH lib
 #include "CTBot.h" // Telegram bot library
 #include "BluetoothSerial.h" // Bluetooth library
-#define DHTPIN 14 // Pin to read sensor
+#define DHTPIN 12 // Pin to read sensor
 #define DHTTYPE DHT11 // We use a DTH11
-#define PHOTORESISTORPIN 9 // Pin to read Photoresistor
-#define SOILMOISTUREPIN 8 // Pin to read Photoresistor
+#define PHOTORESISTORPIN 14 // Pin to read Photoresistor
+#define SOILMOISTUREPIN 13 // Pin to read Photoresistor
 
 #if !defined(CONFIG_BT_ENABLED) || !defined(CONFIG_BLUEDROID_ENABLED)
 #error Bluetooth is not enabled! Please run `make menuconfig` to and enable it
@@ -14,9 +14,9 @@ CTBot myBot;
 DHT dht(DHTPIN, DHTTYPE);
 BluetoothSerial SerialBT;
 
-String ssid  = ""    ; // Wifi name
-String pass  = ""; // WIfi pass
-String token = ""   ; // Telegran token
+String ssid  = "COSMOTE-731614"; // Wifi name
+String pass  = "xsemnrka52s3ban6"; // WIfi pass
+String token = "1814158843:AAFVPXLkJDmycNZ8TRnkej9B02ewuBff-Ts"   ; // Telegran token
 
 float h, t, l, m;
 String humidity, temperature, light, soilMoisture, toSend;
