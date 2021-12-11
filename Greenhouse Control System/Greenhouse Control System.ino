@@ -14,9 +14,9 @@ CTBot myBot;
 DHT dht(DHTPIN, DHTTYPE);
 BluetoothSerial SerialBT;
 
-String ssid  = "COSMOTE-731614"; // Wifi name
-String pass  = "xsemnrka52s3ban6"; // WIfi pass
-String token = "1814158843:AAFVPXLkJDmycNZ8TRnkej9B02ewuBff-Ts"   ; // Telegran token
+String ssid  = ""; // Wifi name
+String pass  = ""; // WIfi pass
+String token = ""; // Telegran token
 
 float h, t, l, m;
 String humidity, temperature, light, soilMoisture, toSend;
